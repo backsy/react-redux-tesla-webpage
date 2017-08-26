@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './TeslaStats.css';
 const TeslaStats = (props) => {
   const listItems = props.carstats.map((stat) => (
@@ -16,6 +17,6 @@ const TeslaStats = (props) => {
   )
 };
 TeslaStats.propTypes = {
-  carstats: React.PropTypes.array
+  carstats: PropTypes.array
 }
 export default TeslaStats;

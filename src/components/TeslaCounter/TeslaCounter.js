@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './TeslaCounter.css';
 
 const TeslaCounter = ({ initValues, currentValue, increment, decrement }) => (
@@ -32,10 +33,10 @@ const TeslaCounter = ({ initValues, currentValue, increment, decrement }) => (
 );
 
 TeslaCounter.propTypes = {
-  currentValue: React.PropTypes.number,
-  increment: React.PropTypes.func,
-  decrement: React.PropTypes.func,
-  initValues: React.PropTypes.object
+  currentValue: PropTypes.number,
+  increment: PropTypes.func,
+  decrement: PropTypes.func,
+  initValues: PropTypes.object
 }
 
 export default TeslaCounter;
