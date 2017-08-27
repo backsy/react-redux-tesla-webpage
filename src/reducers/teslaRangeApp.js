@@ -75,7 +75,7 @@ function appReducer(state = initialState, action) {
           }
       };
       return updateStats(state, newState);
-    }        
+    }
     case 'TEMPERATURE_UP': {
       const newState = {
           ...state,
@@ -99,7 +99,7 @@ function appReducer(state = initialState, action) {
           }
       };
       return updateStats(state, newState);
-    }        
+    }
     case 'CHANGE_WHEEL': {
       const newState = {
           ...state,
@@ -111,7 +111,7 @@ function appReducer(state = initialState, action) {
           }
       };
       return updateStats(state, newState);
-    }    
+    }
     default:
       return state
   }
